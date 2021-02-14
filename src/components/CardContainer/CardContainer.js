@@ -155,15 +155,11 @@ const CardContainer = () => {
       auxIcon: DoneGreen
     }
   ]
-  data.map(data => {
-    return data
-  })
   const cards = data.map((element, i) => {
     return <Card datos={element} key={element.id} />
   })
   return (
     <>
-      {/* <Card datos={data[0]} /> */}
       {cards}
     </>
   )

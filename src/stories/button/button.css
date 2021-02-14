@@ -1,4 +1,4 @@
-.storybook-button {
+/* .storybook-button {
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
   border: 0;
@@ -27,4 +27,32 @@
 .storybook-button--large {
   font-size: 16px;
   padding: 12px 24px;
+} */
+:root {
+  --educaDarkBlue: #4f36d6;
+  --mainWhiteColor: #ffffff;
+}
+.cardButton {
+  display: flex;
+  align-items: center;
+  padding: 9.5px 16px !important;
+  text-transform: none !important;
+  width: 110px;
+  height: 40px;
+  margin: 8px 12px 12px auto !important;
+  background: linear-gradient(
+      0deg,
+      rgba(26, 26, 26, 0.6),
+      rgba(26, 26, 26, 0.6)
+    ),
+    var(--educaDarkBlue) !important;
+  border-radius: 3px;
+}
+.cardButton span {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+  color: var(--mainWhiteColor);
+  font-family: DM Sans;
+  font-style: normal;
 }
