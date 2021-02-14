@@ -1,0 +1,378 @@
+:root {
+  --mainColorText: #1a1a1a;
+  --mainBorderColor: #dfdfda;
+  --mainWhiteColor: #ffffff;
+  --educaDarkBlue: #4f36d6;
+  --labelColor: #6d786f;
+  --circularProgress: #50d174;
+  --error: #f45c3a;
+  --doneColor: #f8f8f6;
+}
+.wrapperBody {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.backgroundIsNew {
+  background: linear-gradient(
+      0deg,
+      rgba(39, 168, 255, 0.05),
+      rgba(39, 168, 255, 0.05)
+    ),
+    var(--mainWhiteColor);
+}
+.backgroundFinished {
+  background: var(--doneColor);
+}
+.borderBox {
+  background: var(--mainWhiteColor);
+  border: 1px solid var(--mainBorderColor);
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  width: 100%;
+  overflow: hidden;
+  margin: 12px 0 12px 0;
+}
+.wrapperContent {
+  display: flex;
+  width: 100%;
+}
+.wrapperInfo {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+}
+.bottomBox {
+  margin-top: auto;
+  width: 100%;
+  height: 40px;
+  background-color: var(--mainWhiteColor);
+  display: flex;
+  border-top: 1px solid var(--mainBorderColor);
+}
+.chatIcon {
+  margin: 12px 17px 14px auto;
+  cursor: pointer;
+}
+.chatIconDisabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.mainIcon {
+  width: 40px !important;
+  height: 40px !important;
+}
+.font {
+  font-family: DM Sans;
+  font-style: normal;
+}
+.tag {
+  margin: 8px auto 8px 16px;
+}
+.tag svg {
+  width: 8px;
+  margin-left: 8px !important;
+}
+.tag span {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--mainColorText);
+}
+.iconWrapper {
+  margin: 12px 8px auto 12px;
+}
+.wrapperInfoTitle {
+  display: flex;
+  flex-direction: column;
+  margin-top: 13.5px;
+  margin-bottom: 10px;
+  min-width: 326px;
+  max-width: 326px;
+}
+.wrapperInfoTitle p {
+  overflow-wrap: break-word;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.wrapperTextProgress {
+  display: flex;
+}
+.titleCard {
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--mainColorText);
+}
+.subtitleCard {
+  font-weight: bold;
+  line-height: 16px;
+  color: var(--mainColorText);
+  font-size: 16px;
+  line-height: 21px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.wrapperDate {
+  display: flex;
+}
+.wrapperInfoDate {
+  display: flex;
+  padding-top: 1px;
+}
+.wrapperInfoDate p {
+  font-family: DM Sans;
+  font-style: normal;
+  font-size: 14px;
+}
+.titleDate {
+  color: var(--labelColor);
+  margin-right: 4px;
+  font-weight: normal;
+  line-height: 18px;
+}
+.date {
+  font-weight: bold !important;
+  margin-left: 3px !important;
+}
+.isNewDate {
+  font-weight: normal !important;
+  color: var(--labelColor);
+}
+.calendarIcon {
+  color: var(--mainWhiteColor);
+  padding-top: 3px;
+}
+.wrapperProgress {
+  display: flex;
+  align-items: center;
+}
+.wrapperProgress p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: DM Sans !important;
+  font-style: normal !important;
+}
+.backgroundCircularProgress {
+  position: absolute;
+}
+.frontCircularProgress {
+  z-index: 555;
+  color: var(--circularProgress);
+  margin-right: 8px;
+}
+.progressInfo {
+  color: var(--labelColor);
+  display: flex;
+}
+.boldProgress {
+  font-weight: bold !important;
+  color: var(--mainColorText);
+  margin-left: 3px !important;
+}
+.cardButton {
+  display: flex;
+  align-items: center;
+  padding: 9.5px 16px !important;
+  text-transform: none !important;
+  width: 110px;
+  height: 40px;
+  margin: 8px 12px 12px auto !important;
+  background: linear-gradient(
+      0deg,
+      rgba(26, 26, 26, 0.6),
+      rgba(26, 26, 26, 0.6)
+    ),
+    var(--educaDarkBlue) !important;
+  border-radius: 3px;
+}
+.cardButton span {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+  color: var(--mainWhiteColor);
+  font-family: DM Sans;
+  font-style: normal;
+}
+.isNew {
+  background: #27a8ff;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  width: 55px;
+  height: 20px;
+  margin-top: 9.5px;
+}
+.isNew p {
+  color: var(--mainWhiteColor);
+  font-size: 12px;
+  line-height: 16px;
+  margin: auto;
+  font-family: DM Sans !important;
+  font-style: normal !important;
+}
+.isLate {
+  width: 115px;
+  height: 20px;
+  background: linear-gradient(
+      0deg,
+      rgba(244, 92, 58, 0.1),
+      rgba(244, 92, 58, 0.1)
+    ),
+    var(--mainWhiteColor);
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 9.5px;
+}
+.isLate p {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--error);
+}
+.isLateDate {
+  color: var(--error);
+}
+.wrapperFinishedMsg {
+  display: flex;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  align-items: center;
+}
+.wrapperTextMsg {
+  display: flex;
+}
+.wrapperTextMsg p {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--mainColorText);
+}
+.msgSpace {
+  margin-right: 3px !important;
+}
+.iconDone {
+  width: 16px !important;
+  height: 16px !important;
+  margin-right: 8px;
+}
+.calendarSpace {
+  width: 16px !important;
+  height: 16px !important;
+  margin-right: 8px;
+}
+.emptyBox {
+  width: 110px;
+}
+@media only screen and (min-width: 470px) and (max-width: 975px) {
+  .wrapperBody {
+    flex-direction: row;
+  }
+  .cardButton {
+    margin: 12px 12px auto auto !important;
+  }
+  .wrapperProgress {
+    margin-bottom: 12px;
+  }
+  .wrapperContent {
+    width: auto;
+  }
+}
+@media only screen and (min-width: 975px) and (max-width: 1920px) {
+  .wrapperInfo {
+    flex-direction: row;
+  }
+  .subtitleCard {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .wrapperBody {
+    flex-direction: row;
+  }
+  .iconWrapper {
+    margin: 16px;
+  }
+  .cardButton {
+    margin: auto 16px auto auto !important;
+    min-width: 110px !important;
+  }
+  .wrapperInfo {
+    width: 100%;
+    justify-content: space-between;
+    margin-right: 42px;
+  }
+  .wrapperInfoDate {
+    flex-direction: column;
+  }
+  .wrapperDate {
+    align-items: center;
+  }
+  .date {
+    margin: 0 !important;
+  }
+  .wrapperTextProgress {
+    flex-direction: column;
+  }
+  .boldProgress {
+    margin: 0 !important;
+  }
+  .frontCircularProgress {
+    width: 25px !important;
+    height: 25px !important;
+    margin-right: 18px !important;
+  }
+  .backgroundCircularProgress {
+    width: 25px !important;
+    height: 25px !important;
+  }
+  .wrapperContent {
+    min-height: 88px;
+  }
+  .wrapperInfoTitle {
+    padding-top: 12px;
+    margin-bottom: 16px;
+  }
+  .mainIcon {
+    width: 56px !important;
+    height: 56px !important;
+  }
+  .iconWrapper {
+    margin: 16px;
+  }
+  .isNewDate {
+    font-weight: bold !important;
+    color: var(--mainColorText);
+  }
+  .wrapperTextMsg {
+    flex-direction: column;
+  }
+  .iconDone {
+    margin-right: 16px;
+    width: 24px !important;
+    height: 24px !important;
+  }
+  .calendarIcon {
+    width: 24px !important;
+    height: 24px !important;
+  }
+}
